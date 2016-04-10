@@ -1,11 +1,10 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "com.udacity.gradle.builditbigger"
         minSdkVersion 14
         targetSdkVersion 22
         versionCode 1
@@ -17,12 +16,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
 }
 
 dependencies {
-    compile project (':jokes')
-    compile project (':displayjokes')
-    // Added for AdMob
-    compile 'com.google.android.gms:play-services:7.3.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:22.1.1'
 }
