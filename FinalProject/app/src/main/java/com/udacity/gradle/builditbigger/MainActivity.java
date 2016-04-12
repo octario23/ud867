@@ -1,23 +1,20 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.example.Jokes;
 
-import app.permissions.com.displayjokes.DisplayJokeActivity;
-
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        com.udacity.gradle.builditbigger.MainActivityFragment mainActivityFragment = new com.udacity.gradle.builditbigger.MainActivityFragment();
+        getSupportFragmentManager().beginTransaction().add(R.id.container, mainActivityFragment).commit();
     }
 
 
@@ -43,13 +40,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void tellJoke(View view){
-        Jokes joke = new Jokes();
-        Intent intent = new Intent(this, DisplayJokeActivity.class);
-        intent.putExtra(Jokes.TEXT_JOKE,joke.getInitialJoke());
-        startActivity(intent);
-//        Toast.makeText(this, joke.getInitialJoke(), Toast.LENGTH_SHORT).show();
+    public void tellJoke(View view) {
+
     }
-
-
 }

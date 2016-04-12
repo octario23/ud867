@@ -42,3 +42,14 @@ gradle-app.setting
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
+4.01-Demo-CreatingAJavaLibrary/app/gradle/wrapper/gradle-wrapper.jar
+4.01-Demo-CreatingAJavaLibrary/app/gradle/wrapper/gradle-wrapper.properties
+4.01-Demo-CreatingAJavaLibrary/app/gradlew
+4.01-Demo-CreatingAJavaLibrary/app/gradlew.bat
+4.01-Demo-CreatingAJavaLibrary/displayjokes/.gitignore
+4.01-Demo-CreatingAJavaLibrary/displayjokes/build.gradle
+4.01-Demo-CreatingAJavaLibrary/displayjokes/proguard-rules.pro
+4.01-Demo-CreatingAJavaLibrary/displayjokes/src/androidTest/java/app/permissions/com/displayjokes/ApplicationTest.java
+4.01-Demo-CreatingAJavaLibrary/displayjokes/src/main/AndroidManifest.xml
+4.01-Demo-CreatingAJavaLibrary/displayjokes/src/main/res/values/strings.xml
+4.01-Demo-CreatingAJavaLibrary/displayjokes/src/test/java/app/permissions/com/displayjokes/ExampleUnitTest.java

@@ -11,6 +11,15 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    productFlavors {
+        paid {
+            applicationId = "com.udacity.gradle.builditbigger.paid"
+        }
+        free {
+            applicationId = "com.udacity.gradle.builditbigger.free"
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -20,9 +29,11 @@ android {
 
 }
 
+
 dependencies {
-    compile project (':jokes')
-    compile project (':displayjokes')
+    compile project(':jokes')
+    compile project(':displayjokes')
     // Added for AdMob
-    compile 'com.google.android.gms:play-services:7.3.0'
+    compile project(path: ':jokeServer', configuration: 'android-endpoints')
+    freeCompile 'com.google.android.gms:play-services-ads:8.4.0'
 }

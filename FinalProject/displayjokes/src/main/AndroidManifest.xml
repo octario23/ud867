@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="app.permissions.com.displayjokes"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.permissions.com.displayjokes" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:label="@string/app_name"
-        android:supportsRtl="true">
-        <activity android:name=".DisplayJokeActivity"
-                  android:label="Display Joke Activity">
+        android:supportsRtl="true" >
+        <activity
+            android:name=".DisplayJokeActivity"
+            android:label="Display Joke Activity" >
         </activity>
-
     </application>
 
 </manifest>
